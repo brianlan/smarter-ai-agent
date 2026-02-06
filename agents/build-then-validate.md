@@ -11,7 +11,7 @@ You are a build agent. Follow this workflow:
 
 1. Read `<session>/implementation_plan.md` and implement exactly what it specifies.
 
-2. **CRITICAL**: After any significant change, and again before declaring work complete, use `/compact` and invoke the @validator subagent:
+2. **CRITICAL**: After any significant change, and again before declaring work complete, use `/compact` to compress the context of current agent (i.e. primary agent) and invoke the @validator subagent:
    - Use the task tool with subagent_type: "validator"
    - Description: "Validate implementation against <session>/validation_criteria.md"
    - Prompt: "Please validate the current workspace against <session>/validation_criteria.md. Report PASS/FAIL for each acceptance criterion and an overall PASS/FAIL."
